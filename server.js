@@ -38,6 +38,7 @@ const commentRouter = require("./routes/comment");
 app.use("/api/users", userRouter);
 app.use("/api/posts", postRouter);
 app.use("/api/comments/", commentRouter);
+app.use("/api/connectionRequests", connectionRequestRouter)
 
 const PORT = process.env.PORT || 5000;
 
