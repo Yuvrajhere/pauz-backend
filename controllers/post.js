@@ -2,7 +2,7 @@ const Post = require("../models/Post");
 const User = require("../models/User");
 
 const addPost = (req, res) => {
-  if (!req.body.imgUrl) {
+  if (!req.body.caption) {
     return res.status(422).json({
       success: false,
       message: `Insufficient data provided!`,
